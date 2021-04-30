@@ -1,0 +1,83 @@
+Question: In the program that calculates the slope, what happens when the x-coordinates of the line are the same? Answer=infinity
+
+Answer: In the program to calculate slope if we give the x coordinate same then program gives compiletime error saying Exception in thread 
+        "main"  java.lang.ArithmeticException: / by zer.Because according to the formula of slope if we divide something by zero then answer is     infinity and in such cases JVM throws an exception we have to handle that exception by try catch block.
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question:With reference to the program where PI id defined as a constant. What is the naming convention of the constant variable?
+
+Answer: Naming conventions for constants in java is as follows:
+        Syntax:-static final datatype identifier_name=value;  
+		Example:-static final double PI=3.14;  
+-------------------------------------------------------------------------------------------------------------------------------------------------------	
+Question:Provide your comments on this code:
+if ( i<50 && i>100 ) System.out.println(“Hello”);
+In the above expression, the if statement did not have braces. When should braces be put? when can they be avoided?
+
+Answer:If the if condition contains only one sentence then in such cases we  are able to avoid the curtly braces. But if the if condition 
+       contains more than one sentence then in such cases curtly braces are mandatory.It is always a good practice to give the braces to if condition.
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question:What do you mean by nesting? What are the rules related to nested blocks of code?Upto what level can blocks be nested?
+
+Answer:Nesting:-nesting in java is nothing but java language allowed to define a class in another class such type of processing is known as to be nesting,talking about the rules nested block should not be empty.Java does not have any restrictions regarding the count of the nested for blocks. So we can use as many for loops as you want in a program.
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question:Can you write a switch case based on the value of a string variable?In a switch statement, can default be placed at the top instead of at the bottom? 
+
+Answer:yes we can write switch case based onthe value of the string variable within a single coute and in code default can also be able to place at the top instead of bottom.
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+Question:What are the possible values a boolean variable can take?
+
+Answer:We can take only two possible values of boolean and they are true and false.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Question:-What are the values a boolean expression can resolve to?
+
+Answer:-values of boolean expression are 1 and 0.
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+Question:3.	What is the difference between the following sets of operators:
+a.	&& , &
+b.	|| , |
+
+                                &                                                                                  &&
+1.The bitwise AND (&) operator compares each binary digit of two             |             1.The logical AND operator only checks the left side
+integers and returns 1 if both are 1, otherwise, it returns 0.               |             if this condition is true then it returns true
+                                                                             |
+2.We can use the & operator with boolean or numeric types                    |             2.&& can only be used with boolean operands.
+                                                                             |
+3.& compares each operand bitwise                                            |             3.&& operates only on booleans
+
+                                |(Bitwise OR)                                                                  ||(Logical OR)
+1.The bitwise OR (|) operator compares each binary digit of two              |             1.The logical OR operator only checks the left side
+integers and returns 1 if only one condition is 1 otherwise, it returns 0.   |             if this condition is true then it returns true
+                                                                             |
+2.We can use the | operator with boolean or numeric types                    |             2.|| can only be used with boolean operands.
+                                                                             |
+3.| compares each operand bitwise                                            |             3.|| operates only on booleans								
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+Question:Does java have support for a ‘boolean’ data type?
+
+Answer:Yes java have support for the Boolean data type.
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+Question:In a program, typically where are boolean expressions used?
+
+Answer:In program typically in if block boolean expressions are used.
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+Question:What are the most common situations where the circuit operators are used?
+
+Answer:When two many conditions arrises then in such cases circuite operator are ued.
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+Question:In the simple interest program, in the expression keep an int to the left and all floats to the right. Why does the program not compile.
+
+Answer: There is one concept in java known as narrowing concepts.int having size of 32 bit and float having size of 62 bits in such cases we cant do narrowing and hence program does not able to compile.
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+Question:Write a program that has the following declaraion:  byte b = 09
+
+Answer:JVM gives compile time error saying The literal 09 of type int is out of range. 
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+https://github.com/HarishPhatke/assignment2
